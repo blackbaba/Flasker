@@ -30,4 +30,4 @@ Werkzeug==0.12.2
 WTForms==2.1
 Flask-SSLify==0.1.5
 gunicorn==19.7.1
-psycopg2==2.7.3
+psycopg2-binary==2.8.6
