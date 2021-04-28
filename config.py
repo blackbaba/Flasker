@@ -17,7 +17,7 @@ class Config:
     FLASKY_POSTS_PER_PAGE = int(os.environ.get('FLASKY_POSTS_PER_PAGE'))
     FLASKY_COMMENTS_PER_PAGE = int(os.environ.get('FLASKY_COMMENTS_PER_PAGE'))
     FLASKY_FOLLOWERS_PER_PAGE = int(os.environ.get('FLASKY_FOLLOWERS_PER_PAGE'))
-    FLASKY_SLOW_DB_QUERY_TIME = float(os.environ.get('FLASKY_SLOW_DB_QUERY_TIME')) or 0.5
+    FLASKY_SLOW_DB_QUERY_TIME = float(os.environ.get('FLASKY_SLOW_DB_QUERY_TIME'))
 
     @staticmethod
     def init_app(app):
