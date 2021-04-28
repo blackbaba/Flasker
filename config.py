@@ -14,9 +14,9 @@ class Config:
     FLASKY_ADMIN = os.environ.get('FLASKY_ADMIN')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_RECORD_QUERIES = True
-    FLASKY_POSTS_PER_PAGE = int(os.environ.get('FLASKY_POSTS_PER_PAGE')) or 20
-    FLASKY_COMMENTS_PER_PAGE = int(os.environ.get('FLASKY_COMMENTS_PER_PAGE')) or 20
-    FLASKY_FOLLOWERS_PER_PAGE = int(os.environ.get('FLASKY_FOLLOWERS_PER_PAGE')) or 20
+    FLASKY_POSTS_PER_PAGE = int(os.environ.get('FLASKY_POSTS_PER_PAGE'))
+    FLASKY_COMMENTS_PER_PAGE = int(os.environ.get('FLASKY_COMMENTS_PER_PAGE'))
+    FLASKY_FOLLOWERS_PER_PAGE = int(os.environ.get('FLASKY_FOLLOWERS_PER_PAGE'))
     FLASKY_SLOW_DB_QUERY_TIME = float(os.environ.get('FLASKY_SLOW_DB_QUERY_TIME')) or 0.5
 
     @staticmethod
